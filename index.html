@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  </head>
+  <body>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+    <header class="header">
+        <a href="#home" class="logo"> <span> Moaaz</span> Mohamed </a>
+        
+        <i class="bx bx-menu" id="menu-icon"></i>  
+        
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>  
+          <a href="#skills">Skills</a> 
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        
+       
+    </header>
+
+    <section class="home" id="home">
+  <div class="home-content" data-aos="fade-up" data-aos-duration="1000">
+    <h1 data-aos="fade-right" data-aos-duration="1200">Hi, It's <span2>Moaaz</span></h1>
+    <h3 data-aos="fade-left" data-aos-duration="1200"> I'm a <span2>Graphic Designer</span> </h3>
+    <p data-aos="zoom-in" data-aos-duration="1200"> 
+      Passionate about blending creativity and technology to deliver impactful designs across various media. 
+    </p>
+    
+    <div class="social-icons" data-aos="fade-up" data-aos-delay="200">
+      <a href="#"><i class="bx bxl-github"></i></a>
+      <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+      <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+      <a href="#"><i class="bx bxl-twitter"></i></a>
+    </div>
+    
+    <div class="btn-group" data-aos="fade-up" data-aos-delay="300">
+      <a href="#" class="btn">Hire</a>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+  </div>
+
+  <div class="home-image" data-aos="zoom-in" data-aos-duration="1500">
+    <img src="image.jpg" alt="Profile Image">
+  </div>
+</section>
+
+<script>
+  const menuIcon = document.querySelector("#menu-icon");
+  const navbar = document.querySelector(".navbar");
+  menuIcon.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+  });
+</script>
+
+
+<section class="about" id="about">
+  <div class="about-img" data-aos="fade-right" data-aos-duration="1200">
+    <img src="image2.jpg" alt="">
+  </div>
+  <div class="about-content" data-aos="fade-left" data-aos-duration="1200">
+    <h2>About <span2>Me</span2></h2>
+    <p>
+      Hey There! I’m Moaaz Mohamed, a passionate graphic designer with 4 years of experience 
+      in branding, digital illustration, UI/UX design, and video editing. I focus on blending 
+      aesthetics with functionality to create designs that are both visually appealing and effective. 
+      I enjoy collaborating with clients to bring their ideas to life. Outside of design, I love 
+      Graphic Design. Let’s create something amazing together!.
+    </p>
+    <a href="#" class="btn" data-aos="fade-up" data-aos-delay="200">Read More</a>
+  </div>
+</section>
+
+
+    <!-- Skill Section -->
+ 
+   <section class="skills" id="skills">
+    
+    <div class="content">
+        <div class="column col-left">
+            <h2 class="content-title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">My Skills and Experiences</h2>
+            <div class="paragraph-text" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">With [4 years] of experience, I specialize in [ branding, UI/UX, and digital illustration]. Proficient in Adobe Creative Suite and Blinder, I’ve worked with [Many clients, e.g., startups, agencies] to deliver [specific results, e.g., impactful designs and user-friendly solutions]. I thrive on creating visuals that are both stunning and effective designes</div>
+            <a href="#" class="btn" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="400">See more</a>
+        </div>
+        <div class="column col-right">
+            <div class="bar">
+                <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
+                    <span4>Adobe Photoshop</span>
+                    <span4>95%</span>
+                </div>
+                <div class="line html" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="140"></div>
+            </div>
+            <div class="bar">
+                <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                  <span4>Adobe Premiere</span>
+                  <span4>90%</span>
+                </div>
+                <div class="line css" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="240"></div>
+            </div>
+            <div class="bar">
+                <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+                    <span4>Adobe Illustrator</span>
+                    <span4>80%</span>
+                </div>
+                <div class="line javascript" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="340"></div>
+            </div>
+            <div class="bar">
+                <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
+                    <span4>Blender</span>
+                    <span4>85%</span>
+                </div>
+                <div class="line python" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="440"></div>
+            </div>
+            <div class="bar">
+                <div class="info" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
+                    <span4>Adobe after effects</span>
+                    <span4>65%</span>
+                </div>
+                <div class="line php" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="540"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Services Section -->
+
+    <!-- Services Section -->
+
+    <section class="services" id="services">
+      <div class="title">
+          <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000"><span2>My Services</span2></h2>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Transforming ideas into stunning visuals, I specialize in creating impactful designs tailored to your brand. From logos and branding to digital illustrations and marketing materials, I bring creativity and precision to every project. Let’s collaborate to elevate your visual identity and leave a lasting impression. Your vision, my design perfection delivered.</p>
+      </div>
+      <div class="content">
+          <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+              <div class="service-icon">
+                  <i class="fas fa-file-code"></i>
+              </div>
+              <div class="info">
+                  <h3>Web Design</h3>
+                  <p4>Designing sleek, user-friendly websites that captivate and convert, I bring your digital vision to life. From responsive layouts to seamless functionality, I craft online experiences that leave a lasting impact. </p>
+              </div>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+              <div class="service-icon">
+                  <i class="fas fa-object-group"></i>
+              </div>
+              <div class="info">
+                  <h3>Graphic Design</h3>
+                  <p4>Bringing stories to life with dynamic motion graphics, I create engaging animations that captivate and communicate. From explainer videos to animated logos, I deliver visuals that move your audience and elevate your brand. </p>
+              </div>
+          </div>
+          <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+              <div class="service-icon">
+                  <i class="fas fa-palette"></i>
+              </div>
+              <div class="info">
+                  <h3>Branding Designe</h3>
+                  <p4>Crafting powerful brand identities that resonate, I design logos, color palettes, and visual systems that reflect your unique story. Let’s build a brand that leaves a lasting impression and stands out in the crowd. </p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+ <!-- Projects Section -->
+
+ <section class="projects" id="projects">
+  <h2 class="heading" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+    <span2 data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">Projects</span2>
+  </h2>
+  
+  <div class="projects-box">
+      <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <img src="project1.png" alt="">
+          <h3>Project 1</h3>
+          <p>Fantasy horse transformation using Photoshop with magical lighting effects.</p>
+          <div class="btn">Review Project</div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <img src="project2.png" alt="">
+          <h3>Project 2</h3>
+          <p>Realistic 3D product visualization created in Blender for professional ads.</p>
+          <div class="btn">Review Project</div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <img src="project3.png" alt="">
+          <h3>Project 3</h3>
+          <p>Modern web design for a crypto trading platform with sleek UI/UX.</p>
+          <div class="btn">Review Project</div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <img src="project4.png" alt="">
+          <h3>Project 4</h3>
+          <p>Creative social media designs enhancing brand identity and engagement.</p>
+          <div class="btn">Review Project</div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <img src="project5.png" alt="">
+          <h3>Project 5</h3>
+          <p>Luxury business card design with a sleek black and gold theme.</p>
+          <div class="btn">Review Project</div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+          <img src="project6.png" alt="">
+          <h3>Project 6</h3>
+          <p>Striking book cover design with a dark aesthetic and bold typography.</p>
+          <div class="btn">Review Project</div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+          <img src="project7.png" alt="">
+          <h3>Project 7</h3>
+          <p>Eye-catching burger advertisement with dynamic ingredient layering.</p>
+          <div class="btn">Review Project</div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+          <img src="project8.png" alt="">
+          <h3>Project 8</h3>
+          <p>Elegant olive oil advertisement highlighting purity and high quality.</p>
+          <div class="btn">Review Project</div>
+      </div>
+  </div>
+</section>
+
+
+
+
+<section class="contact" id="contact">
+  <div class="title reveal" data-aos="fade-up" data-aos-duration="1000">
+    <h2 class="section-title">Contact <span class="animated-span">Me</span></h2>
+  </div>
+  <div class="content">
+    <div class="row">
+      <div class="card reveal" data-aos="flip-left" data-aos-duration="1000">
+        <div class="contact-icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="info">
+          <h3>Address</h3>
+          <span5>Barcelona, Spain</span>
+        </div>
+      </div>
+      <div class="card reveal" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+        <div class="contact-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="info">
+          <h3>Phone</h3>
+          <span5>+201111-809777</span>
+        </div>
+      </div>
+      <div class="card reveal" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+        <div class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="info">
+          <h3>Email</h3>
+          <span5>moaazmohammad817@email.com</span>
+        </div>
+      </div>
+      <div class="card reveal" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+        <div class="contact-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+        <div class="info">
+          <h3>Website</h3>
+          <span5>lieamra.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact-form reveal">
+        <h3>Send Message</h3>
+        <div class="input-box">
+          <input type="text" name="" value="" placeholder="Name">
+        </div>
+        <div class="input-box">
+          <input type="text" name="" value="" placeholder="Email">
+        </div>
+        <div class="input-box">
+          <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>
+        </div>
+        <div class="input-box">
+          <input type="submit" class="send-btn" name="" value="Send">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="social-icon">
+    <a herf="#">
+      <i class="bx bxl-github"></i>
+    </a>
+
+    <a herf="#">
+      <i class="bx bxl-linkedin-square"></i>
+    </a>
+
+    <a herf="#">
+      <i class="bx bxl-instagram-alt"></i>
+    </a>
+
+
+    <a herf="#">
+      <i class="bx bxl-twitter"></i>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <span3 class="footer-title">Moaz Mohamed</span3>
+  <p>Copyright @2025 <a href="#">Moaz Mohamed</a>. All Rights Reserved.</p>
+</footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js">
+  </script>
+  <script>
+    AOS.init({offset:0});
+  </script>
+    <script src="script.js"></script>
+  </body>
+</html>
+<link>
