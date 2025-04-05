@@ -333,7 +333,6 @@ section{
 
 
 /* Skills Section */
-
 .skills{
   background-color: black;
 }
@@ -348,7 +347,9 @@ section{
   color: white;
   margin-top: 25rem;
   font-size: 2rem;
+  flex-wrap: wrap; /* ليتناسب مع الشاشات الصغيرة */
 }
+
 .skills .content h2{
   background: linear-gradient(
     10deg,
@@ -357,25 +358,21 @@ section{
   );
   background-clip: text;
   color: transparent;
-  
   border-radius: 5px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-.skills .content .col-left{
+.skills .content .col-left,
+.skills .content .col-right{
   position: relative;
   width: 46%;
+  margin-bottom: 2rem;
 }
 
 .skills .content .col-left .content-title{
   margin-bottom: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 6rem;
-}
-
-.skills .content .col-right{
-  position: relative;
-  width: 46%;
 }
 
 .skills .content .col-right .bar{
@@ -389,11 +386,6 @@ section{
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5px;
-}
-
-.skills .content .col-right .br .info span{
-  font-size: 18px;
-  font-weight: 500;
 }
 
 .skills .content .col-right .bar .line{
@@ -438,16 +430,46 @@ section{
   background-color: #6d7eb8;
 }
 
+/* Media Query for small screens */
 @media (max-width: 768px) {
-  .skills {
-    flex-direction: column-reverse;
+  .skills .content{
+    margin-top: 5rem; /* تقليل المسافة في الشاشات الصغيرة */
+    flex-direction: column; /* جعل العناصر في عمود */
+    font-size: 1.5rem; /* تصغير الخط */
   }
 
-  .home-image img {
-    width: 80vw; /* زيادة عرض الصورة ليكون 80% من عرض الشاشة */
-    margin-top: 20قثة; /* إزالة المسافة العلوية لو حابب */
+  .skills .content h2{
+    font-size: 3rem; /* تصغير حجم العنوان */
+  }
+
+  .skills .content .col-left,
+  .skills .content .col-right{
+    width: 100%; /* جعل الأعمدة تأخذ عرض الشاشة الكامل */
+    margin-bottom: 2rem;
+  }
+
+  .skills .content .col-left .content-title{
+    font-size: 4rem; /* تصغير العنوان */
+  }
+
+  .skills .content .col-right .bar{
+    margin-bottom: 10px; /* تقليل المسافة بين العناصر */
   }
 }
+
+@media (max-width: 480px) {
+  .skills .content h2{
+    font-size: 2.5rem; /* تصغير حجم العنوان بشكل أكبر */
+  }
+
+  .skills .content .col-left .content-title{
+    font-size: 3rem; /* تصغير حجم العنوان بشكل أكبر */
+  }
+}
+
+
+
+
 
 
 /* Services */
