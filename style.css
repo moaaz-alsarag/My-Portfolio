@@ -332,8 +332,7 @@ section{
 }
 
 
-/* Skills Section */
-.skills{
+/* Skills Section */.skills{
   background-color: black;
 }
 
@@ -466,7 +465,6 @@ section{
     font-size: 3rem; /* تصغير حجم العنوان بشكل أكبر */
   }
 }
-
 
 
 
