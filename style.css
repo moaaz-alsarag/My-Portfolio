@@ -438,6 +438,17 @@ section{
   background-color: #6d7eb8;
 }
 
+@media (max-width: 768px) {
+  .skills {
+    flex-direction: column-reverse;
+  }
+
+  .home-image img {
+    width: 80vw; /* زيادة عرض الصورة ليكون 80% من عرض الشاشة */
+    margin-top: 20قثة; /* إزالة المسافة العلوية لو حابب */
+  }
+}
+
 
 /* Services */
 
